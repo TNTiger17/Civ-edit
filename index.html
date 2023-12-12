@@ -13,7 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
 <!-- End google font -->
 </head>
-<body>
+<body >
 	<img src = "images/mainMenu.png" class = "bgimg" id = "bgimg"></img>
 <div id="stats">
 	<button title="make sure to save!" class = "next_turn" onclick = "pause_menu()">ESC</button>
@@ -328,9 +328,18 @@
 		</div>
 	</div>
 </div>
-                
+<script>
+<!-- document.addEventListener("mousemove", (event) => {movemouse(event)}); -->
+<!-- setInterval(alert("o"),1) -->
+
+<!-- function movemouse(event) { -->
+	<!-- mouse_info.style.top = `${event.clientY}px` -->
+	<!-- mouse_info.style.left = `${event.clientX}px` -->
+<!-- } -->
+</script>       
 
 <script>
+const mouse_info = document.getElementById("mouse_info")
 const canvas = document.querySelector("canvas")
 canvas.height = screen.height*0.88
 canvas.width = screen.width
@@ -567,4 +576,5 @@ const devmode = true
 <script src = "js/index.js"></script>
 <script src = "js/popups.js"></script>
 <script src = "js/devtools.js"></script>
+<script src = "js/TweenLite.min.js"></script>
 </body>
